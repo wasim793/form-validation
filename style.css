@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-boxegg ;
+}
+body{
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    background-color: rgb(198, 207, 214);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    font-size: 1.5rem;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    /* position: fixed; */
+    overflow: hidden;
+    
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    /* position: ; */
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+} 
+
+label{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+input{
+    padding: 10px;
+    border: none;
+}
+
+.button{
+    padding: 1rem;
+    background-color: rgb(84, 84, 235);
+    border: none;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+small{
+    color: red;
+    visibility: hidden;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+    background-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+    background-color: red;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+/* i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}x */
